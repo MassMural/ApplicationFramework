@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2403E50E70B77C41F222CAE8 /* Pods_MassMural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D4C7A57254E4EAC41D83E7 /* Pods_MassMural.framework */; };
 		87412D3B1CACB5A000D8F33A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87412D3A1CACB5A000D8F33A /* LocationViewController.swift */; };
+		87412D3D1CACBB2000D8F33A /* StreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87412D3C1CACBB2000D8F33A /* StreetViewController.swift */; };
 		87B53F401CA3748D00B1E760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B53F3F1CA3748D00B1E760 /* AppDelegate.swift */; };
 		87B53F421CA3748D00B1E760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B53F411CA3748D00B1E760 /* ViewController.swift */; };
 		87B53F451CA3748D00B1E760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B53F431CA3748D00B1E760 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		1FE7EF32C489984D6CD129A5 /* Pods-MassMural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassMural.release.xcconfig"; path = "Pods/Target Support Files/Pods-MassMural/Pods-MassMural.release.xcconfig"; sourceTree = "<group>"; };
 		4FD24853886206EC3D0FAE66 /* Pods-MassMural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassMural.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MassMural/Pods-MassMural.debug.xcconfig"; sourceTree = "<group>"; };
 		87412D3A1CACB5A000D8F33A /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		87412D3C1CACBB2000D8F33A /* StreetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetViewController.swift; sourceTree = "<group>"; };
 		87B53F3C1CA3748D00B1E760 /* MassMural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassMural.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B53F3F1CA3748D00B1E760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B53F411CA3748D00B1E760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				87B53F521CA3760400B1E760 /* LoginViewController.swift */,
 				87B53F541CA3761400B1E760 /* MainViewController.swift */,
 				87412D3A1CACB5A000D8F33A /* LocationViewController.swift */,
+				87412D3C1CACBB2000D8F33A /* StreetViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				87412D3B1CACB5A000D8F33A /* LocationViewController.swift in Sources */,
 				87B53F531CA3760400B1E760 /* LoginViewController.swift in Sources */,
 				87B53F421CA3748D00B1E760 /* ViewController.swift in Sources */,
+				87412D3D1CACBB2000D8F33A /* StreetViewController.swift in Sources */,
 				87B53F401CA3748D00B1E760 /* AppDelegate.swift in Sources */,
 				87B53F551CA3761400B1E760 /* MainViewController.swift in Sources */,
 			);
