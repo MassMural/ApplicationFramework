@@ -41,10 +41,15 @@ class LocationViewController: UIViewController {
                     print(self.lat)
                 }
             })
+        
 
     }
 
     @IBAction func useCurrentLocation(sender: AnyObject) {
+        lat = userLocation.coordinate.latitude
+        
+        CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude,
+            longitude: userLocation.coordinate.longitude)
     }
     
     // MARK: - Navigation
@@ -54,11 +59,20 @@ class LocationViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     
+        
+        if segue.identifier == "submit" {
+            print("hello")
             if let detailviewController: StreetViewController = segue.destinationViewController as? StreetViewController {
-                    detailviewController.lat = self.lat
+                detailviewController.lat = self.lat
                 detailviewController.long = self.long
                 
             }
-    }
+            else if segue.identifier == "current" {
+                print("Going to use current location")
+            }
+            
+        }
+        
+        }
 
 }

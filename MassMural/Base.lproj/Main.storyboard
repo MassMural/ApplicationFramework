@@ -78,7 +78,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="onSubmit:" destination="Kkn-1R-Y4z" eventType="touchUpInside" id="dl0-lg-5hM"/>
-                                    <segue destination="9Xs-he-5Wc" kind="push" id="Dsb-uP-Hgh"/>
+                                    <segue destination="9Xs-he-5Wc" kind="push" identifier="submit" id="0IN-U5-yHG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xM1-e5-Xd6">
@@ -91,12 +91,13 @@
                                 <state key="normal" title="Use Current Location"/>
                                 <connections>
                                     <action selector="useCurrentLocation:" destination="Kkn-1R-Y4z" eventType="touchUpInside" id="egl-rI-E2k"/>
+                                    <segue destination="9Xs-he-5Wc" kind="push" identifier="current" id="Mti-JE-b7a"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Drawing" id="hgq-pp-E2A"/>
+                    <navigationItem key="navigationItem" id="wxk-wL-EiE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="locationTextField" destination="xM1-e5-Xd6" id="aG9-wq-HQb"/>
@@ -104,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0O-nR-uvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="787"/>
+            <point key="canvasLocation" x="2179" y="787"/>
         </scene>
         <!--Street View Controller-->
         <scene sceneID="JiJ-SW-bQ4">
@@ -139,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwT-cu-A7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="1443"/>
+            <point key="canvasLocation" x="2121" y="1363"/>
         </scene>
         <!--Profile-->
         <scene sceneID="lJb-hj-RqK">
@@ -172,12 +173,34 @@
                     </tabBar>
                     <connections>
                         <segue destination="8p5-4L-Z2w" kind="relationship" relationship="viewControllers" id="HKQ-UF-ibE"/>
-                        <segue destination="Kkn-1R-Y4z" kind="relationship" relationship="viewControllers" id="JGR-G3-k1R"/>
+                        <segue destination="qSa-MH-Hqf" kind="relationship" relationship="viewControllers" id="JGR-G3-k1R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6X-7s-7rz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="853" y="339"/>
         </scene>
+        <!--Drawing-->
+        <scene sceneID="ZIQ-zF-xFQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qSa-MH-Hqf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Drawing" id="hgq-pp-E2A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="seK-Gb-rod">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kkn-1R-Y4z" kind="relationship" relationship="rootViewController" id="qEN-FD-zf3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3J-QE-fDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="787"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mti-JE-b7a"/>
+    </inferredMetricsTieBreakers>
 </document>
